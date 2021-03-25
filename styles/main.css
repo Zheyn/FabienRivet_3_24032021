@@ -27,8 +27,13 @@ img {
   padding: 4% 0;
   text-align: center;
   border: none;
+  outline: none;
   background-color: #f3f3f3;
   box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.137);
+}
+.header input:focus {
+  font-size: 4vw;
+  font-weight: 500;
 }
 .header input::placeholder {
   color: #333333;
@@ -59,6 +64,7 @@ img {
   width: 15rem;
   height: 3.5rem;
   border: none;
+  outline: none;
   border-radius: 2rem;
   font-size: 4vw;
   font-weight: 600;
@@ -72,10 +78,15 @@ img {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 25%;
 }
 .fonctionnement .fonctionnement__titre {
   text-align: start;
   width: 100%;
+  font-size: 6.5vw;
+  font-weight: 600;
+  margin-left: 8%;
+  margin-bottom: 10%;
 }
 
 /*# sourceMappingURL=main.css.map */
