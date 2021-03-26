@@ -4,9 +4,7 @@ img {
 }
 .main {
     font-family: Roboto;
-  // display: grid;
-  // grid-template-columns: auto;
-  // grid-template-rows: repeat(5, auto);
+    
 }
 .header {
   margin: 5% 0;
@@ -80,5 +78,27 @@ img {
         font-weight: 600;
         margin-left: 8%;
         margin-bottom: 10%;
+    }
+    & .fonctionnement__btn1{
+      position: relative;
+      margin: auto;
+      width: 65%;
+      padding: 5% 12%;
+      text-align: center;
+      font-size: 4.4vw;
+      font-weight: 600;
+      border-radius: 1rem;
+      box-shadow: 0px 5px 14px -4px rgba(0,0,0,0.30);
+      &::before{
+        position: absolute;
+        content: "1";
+        transform: translateX(-80px);
+        padding: 5px;
+      }
+    }
+    & i{
+      transform: translateX(-35px);
+      color: rgba(0, 0, 0, 0.575);
+      font-size: 5vw;
     }
 }
