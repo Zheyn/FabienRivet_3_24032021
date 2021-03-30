@@ -9,6 +9,11 @@
   width: 100vw;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .header {
   margin-top: 5%;
   width: 100%;
@@ -437,6 +442,10 @@ footer .footer__icon_ustensils {
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   margin-bottom: 5%;
+  cursor: pointer;
+}
+.entrees .entrees__entrees_1:focus .entrees__anim_price {
+  transform: scaleX(1);
 }
 .entrees .entrees__nom_principal_1 {
   padding: 15px 0 10px 10px;
@@ -452,6 +461,26 @@ footer .footer__icon_ustensils {
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
+}
+.entrees .entrees__anim_price {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 1s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
+.entrees .icon__price {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .entrees .entrees__entrees_2 {
   display: grid;
@@ -469,6 +498,9 @@ footer .footer__icon_ustensils {
 .entrees .entrees__description_2 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .entrees .entrees__price_2 {
   grid-column: 2/3;
@@ -492,6 +524,9 @@ footer .footer__icon_ustensils {
 .entrees .entrees__description_3 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .entrees .entrees__price_3 {
   grid-column: 2/3;
@@ -516,6 +551,7 @@ footer .footer__icon_ustensils {
   margin-bottom: 5%;
   text-align: start;
   width: 100%;
+  padding-top: 15px;
 }
 .plats .plats__titre::after {
   content: "";
@@ -540,6 +576,9 @@ footer .footer__icon_ustensils {
 .plats .plats__description_1 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .plats .plats__price_1 {
   grid-column: 2/3;
@@ -563,6 +602,9 @@ footer .footer__icon_ustensils {
 .plats .plats__description_2 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .plats .plats__price_2 {
   grid-column: 2/3;
@@ -586,6 +628,9 @@ footer .footer__icon_ustensils {
 .plats .plats__description_3 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .plats .plats__price_3 {
   grid-column: 2/3;
@@ -610,6 +655,7 @@ footer .footer__icon_ustensils {
   margin-bottom: 5%;
   text-align: start;
   width: 100%;
+  padding-top: 15px;
 }
 .desserts .desserts__titre::after {
   content: "";
@@ -634,6 +680,9 @@ footer .footer__icon_ustensils {
 .desserts .desserts__description_1 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .desserts .desserts__price_1 {
   grid-column: 2/3;
@@ -657,6 +706,9 @@ footer .footer__icon_ustensils {
 .desserts .desserts__description_2 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .desserts .desserts__price_2 {
   grid-column: 2/3;
@@ -680,6 +732,9 @@ footer .footer__icon_ustensils {
 .desserts .desserts__description_3 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .desserts .desserts__price_3 {
   grid-column: 2/3;
