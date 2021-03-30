@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
 }
-
 @mixin fonctionnement_btn{
       position: relative;
       @include flexcenter;

@@ -9,12 +9,10 @@
   
   & .header__logo{
       @include flexcenter;
-      flex-direction: column;
-      align-items: center;
   }
   & .header__image_logo {
-    width: 50%;
     margin-bottom: 5%;
+    width: 50vw;
   }
   & .header__image{
     width: 100%;
