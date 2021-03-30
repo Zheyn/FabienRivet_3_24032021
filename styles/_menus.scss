@@ -20,12 +20,13 @@
     width: 100%;
 }
 .menus{
+    background-color: $background_color;
     & .menus__titre{
         display: grid;
         align-items: center;
         grid-template-columns: 80% 20%;
         transform: translateY(-60%);
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(235, 235, 235);
         width: 100%;
         height: 6%;
         padding-top: 45px;
@@ -34,7 +35,7 @@
     & .menus__titre_h1{
         font-family: $font_shrikhand;
         font-size: 1.8rem;
-        padding-left: 6%;
+        margin-left: 5%;
     }
     & .menu__heart_icon{
         font-size: 1.5rem;
@@ -42,11 +43,16 @@
     }
 }
 .entrees{
+    @include flexcenter;
+    flex-direction: column;
+    align-items: center;
     & .entrees__titre{
-        margin-left: 4%;
+        margin-left: 6%;
         font-weight: 500;
         color: rgba(0, 0, 0, 0.637);
         margin-bottom: 5%;
+        text-align: start;
+        width: 100%;
         &::after{
             content: "";
             border-bottom: $tertiary_color 3px solid;
@@ -55,4 +61,158 @@
             padding-bottom: 5px;
         }   
     }
+    & .entrees__entrees_1{
+        display: grid;
+        grid-template-columns: 80% 20%;
+        width: 90%;
+        box-shadow: $box_shadow;
+        border-radius: 15px;
+        margin-bottom: 5%;
+    }
+    & .entrees__nom_principal_1{
+        padding: 15px 0 10px 10px;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    & .entrees__description_1{
+        grid-row: 2 / 3;
+        padding: 0 0 15px 10px;
+    }
+    & .entrees__price_1{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        text-align: center;
+        font-weight: 600;
+    }
+    /*Entrée 2*/
+    & .entrees__entrees_2{
+        @include menu__entrees;
+    }
+    & .entrees__nom_principal_2{
+        @include menu__nom_principal;
+    }
+    & .entrees__description_2{
+        @include menu__description;
+    }
+    & .entrees__price_2{
+        @include menu_price
+    }
+    /*Entrée 3*/
+    & .entrees__entrees_3{
+        @include menu__entrees;
+    }
+    & .entrees__nom_principal_3{
+        @include menu__nom_principal;
+    }
+    & .entrees__description_3{
+        @include menu__description;
+    }
+    & .entrees__price_3{
+        @include menu_price
+    }
+}
+.plats{
+    @include flexcenter;
+    flex-direction: column;
+    align-items: center;
+    & .plats__titre{
+        @include menu__titre;
+    }
+    /*Plat 1*/
+    & .plats__entrees_1{
+        @include menu__entrees;
+    }
+    & .plats__nom_principal_1{
+        @include menu__nom_principal;
+    }
+    & .plats__description_1{
+        @include menu__description;
+    }
+    & .plats__price_1{
+        @include menu_price;
+    }
+    /*Plat 2*/
+    & .plats__entrees_2{
+        @include menu__entrees;
+    }
+    & .plats__nom_principal_2{
+        @include menu__nom_principal;
+    }
+    & .plats__description_2{
+        @include menu__description;
+    }
+    & .plats__price_2{
+        @include menu_price;
+    }
+    /*Plat 3*/
+    & .plats__entrees_3{
+        @include menu__entrees;
+    }
+    & .plats__nom_principal_3{
+        @include menu__nom_principal;
+    }
+    & .plats__description_3{
+        @include menu__description;
+    }
+    & .plats__price_3{
+        @include menu_price;
+    }
+}
+.desserts{
+    @include flexcenter;
+    flex-direction: column;
+    align-items: center;
+    & .desserts__titre{
+        @include menu__titre;
+    }
+    /*Dessert 1*/
+    & .desserts__entrees_1{
+        @include menu__entrees;
+    }
+    & .desserts__nom_principal_1{
+        @include menu__nom_principal;
+    }
+    & .desserts__description_1{
+        @include menu__description;
+    }
+    & .desserts__price_1{
+        @include menu_price;
+    }
+    /*Dessert 2*/
+    & .desserts__entrees_2{
+        @include menu__entrees;
+    }
+    & .desserts__nom_principal_2{
+        @include menu__nom_principal;
+    }
+    & .desserts__description_2{
+        @include menu__description;
+    }
+    & .desserts__price_2{
+        @include menu_price;
+    }
+    /*Dessert 3*/
+    & .desserts__entrees_3{
+        @include menu__entrees;
+    }
+    & .desserts__nom_principal_3{
+        @include menu__nom_principal;
+    }
+    & .desserts__description_3{
+        @include menu__description;
+    }
+    & .desserts__price_3{
+        @include menu_price;
+    }
+}
+.bloc_btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.commander__btn{
+    @include main_btn;
+    @include flexcenter;
+    align-items: center;
+    margin: 10% 0;
 }
