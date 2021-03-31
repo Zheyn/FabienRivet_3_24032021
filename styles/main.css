@@ -412,11 +412,13 @@ footer .footer__icon_ustensils {
   color: rgba(0, 0, 0, 0.425);
 }
 
+/*Entrée Titre*/
 .entrees {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  /*Entrée 1*/
   /*Entrée 2*/
   /*Entrée 3*/
 }
@@ -465,6 +467,11 @@ footer .footer__icon_ustensils {
 .entrees .entrees__description_1 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .entrees .entrees__price_1 {
   grid-column: 2/3;
@@ -629,6 +636,7 @@ footer .footer__icon_ustensils {
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 
+/*Plats Titre*/
 .plats {
   display: flex;
   justify-content: center;
@@ -665,6 +673,20 @@ footer .footer__icon_ustensils {
   outline: none;
   overflow: hidden;
 }
+.plats .plats__plats_1:focus .plats__anim_price_1 {
+  margin-left: 0;
+  width: 100%;
+}
+.plats .plats__plats_1:focus .plats__price_1 {
+  transform: translateX(-60px);
+}
+.plats .plats__plats_1:focus .plats__icon_price_1 {
+  transform: scale(1);
+  transform: rotate(1);
+}
+.plats .plats__plats_1:focus .plats__description_1 {
+  width: 80%;
+}
 .plats .plats__nom_principal_1 {
   padding: 15px 0 10px 10px;
   font-size: 1.1rem;
@@ -687,6 +709,27 @@ footer .footer__icon_ustensils {
   transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
+.plats .plats__anim_price_1 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  height: 100%;
+  width: 0;
+  margin-left: 50px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: margin 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
+.plats .plats__icon_price_1 {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(180deg);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
 .plats .plats__plats_2 {
   display: grid;
   grid-template-columns: 80% 20%;
@@ -697,6 +740,20 @@ footer .footer__icon_ustensils {
   cursor: pointer;
   outline: none;
   overflow: hidden;
+}
+.plats .plats__plats_2:focus .plats__anim_price_2 {
+  margin-left: 0;
+  width: 100%;
+}
+.plats .plats__plats_2:focus .plats__price_2 {
+  transform: translateX(-60px);
+}
+.plats .plats__plats_2:focus .plats__icon_price_2 {
+  transform: scale(1);
+  transform: rotate(1);
+}
+.plats .plats__plats_2:focus .plats__description_2 {
+  width: 80%;
 }
 .plats .plats__nom_principal_2 {
   padding: 15px 0 10px 10px;
@@ -720,6 +777,27 @@ footer .footer__icon_ustensils {
   transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
+.plats .plats__anim_price_2 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  height: 100%;
+  width: 0;
+  margin-left: 50px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: margin 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
+.plats .plats__icon_price_2 {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(180deg);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
 .plats .plats__plats_3 {
   display: grid;
   grid-template-columns: 80% 20%;
@@ -730,6 +808,20 @@ footer .footer__icon_ustensils {
   cursor: pointer;
   outline: none;
   overflow: hidden;
+}
+.plats .plats__plats_3:focus .plats__anim_price_3 {
+  margin-left: 0;
+  width: 100%;
+}
+.plats .plats__plats_3:focus .plats__price_3 {
+  transform: translateX(-60px);
+}
+.plats .plats__plats_3:focus .plats__icon_price_3 {
+  transform: scale(1);
+  transform: rotate(1);
+}
+.plats .plats__plats_3:focus .plats__description_3 {
+  width: 80%;
 }
 .plats .plats__nom_principal_3 {
   padding: 15px 0 10px 10px;
@@ -753,7 +845,29 @@ footer .footer__icon_ustensils {
   transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
+.plats .plats__anim_price_3 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  height: 100%;
+  width: 0;
+  margin-left: 50px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: margin 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
+.plats .plats__icon_price_3 {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(180deg);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
 
+/*Desserts Titre*/
 .desserts {
   display: flex;
   justify-content: center;
@@ -790,6 +904,20 @@ footer .footer__icon_ustensils {
   outline: none;
   overflow: hidden;
 }
+.desserts .desserts__desserts_1:focus .desserts__anim_price_1 {
+  margin-left: 0;
+  width: 100%;
+}
+.desserts .desserts__desserts_1:focus .desserts__price_1 {
+  transform: translateX(-60px);
+}
+.desserts .desserts__desserts_1:focus .desserts__icon_price_1 {
+  transform: scale(1);
+  transform: rotate(1);
+}
+.desserts .desserts__desserts_1:focus .desserts__description_1 {
+  width: 80%;
+}
 .desserts .desserts__nom_principal_1 {
   padding: 15px 0 10px 10px;
   font-size: 1.1rem;
@@ -812,6 +940,27 @@ footer .footer__icon_ustensils {
   transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
+.desserts .desserts__anim_price_1 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  height: 100%;
+  width: 0;
+  margin-left: 50px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: margin 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
+.desserts .desserts__icon_price_1 {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(180deg);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
 .desserts .desserts__desserts_2 {
   display: grid;
   grid-template-columns: 80% 20%;
@@ -822,6 +971,20 @@ footer .footer__icon_ustensils {
   cursor: pointer;
   outline: none;
   overflow: hidden;
+}
+.desserts .desserts__desserts_2:focus .desserts__anim_price_2 {
+  margin-left: 0;
+  width: 100%;
+}
+.desserts .desserts__desserts_2:focus .desserts__price_2 {
+  transform: translateX(-60px);
+}
+.desserts .desserts__desserts_2:focus .desserts__icon_price_2 {
+  transform: scale(1);
+  transform: rotate(1);
+}
+.desserts .desserts__desserts_2:focus .desserts__description_2 {
+  width: 80%;
 }
 .desserts .desserts__nom_principal_2 {
   padding: 15px 0 10px 10px;
@@ -845,6 +1008,27 @@ footer .footer__icon_ustensils {
   transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
+.desserts .desserts__anim_price_2 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  height: 100%;
+  width: 0;
+  margin-left: 50px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: margin 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
+.desserts .desserts__icon_price_2 {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(180deg);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
 .desserts .desserts__desserts_3 {
   display: grid;
   grid-template-columns: 80% 20%;
@@ -855,6 +1039,20 @@ footer .footer__icon_ustensils {
   cursor: pointer;
   outline: none;
   overflow: hidden;
+}
+.desserts .desserts__desserts_3:focus .desserts__anim_price_3 {
+  margin-left: 0;
+  width: 100%;
+}
+.desserts .desserts__desserts_3:focus .desserts__price_3 {
+  transform: translateX(-60px);
+}
+.desserts .desserts__desserts_3:focus .desserts__icon_price_3 {
+  transform: scale(1);
+  transform: rotate(1);
+}
+.desserts .desserts__desserts_3:focus .desserts__description_3 {
+  width: 80%;
 }
 .desserts .desserts__nom_principal_3 {
   padding: 15px 0 10px 10px;
@@ -878,7 +1076,29 @@ footer .footer__icon_ustensils {
   transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
+.desserts .desserts__anim_price_3 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  height: 100%;
+  width: 0;
+  margin-left: 50px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: margin 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
+.desserts .desserts__icon_price_3 {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(180deg);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
 
+/*Bouton Commander*/
 .bloc_btn {
   display: flex;
   justify-content: center;
