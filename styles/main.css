@@ -446,14 +446,14 @@ footer .footer__icon_ustensils {
   outline: none;
   overflow: hidden;
 }
-.entrees .entrees__entrees_1:focus .entrees__anim_price {
+.entrees .entrees__entrees_1:focus .entrees__anim_price_1 {
   margin-left: 0;
   width: 100%;
 }
 .entrees .entrees__entrees_1:focus .entrees__price_1 {
   transform: translateX(-60px);
 }
-.entrees .entrees__entrees_1:focus .icon__price {
+.entrees .entrees__entrees_1:focus .entrees__icon_price_1 {
   transform: scale(1);
   transform: rotate(1);
 }
@@ -474,7 +474,7 @@ footer .footer__icon_ustensils {
   transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
-.entrees .entrees__anim_price {
+.entrees .entrees__anim_price_1 {
   grid-column: 2/3;
   grid-row: 1/3;
   height: 100%;
@@ -484,7 +484,7 @@ footer .footer__icon_ustensils {
   background-color: #99E2D0;
   transition: margin 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
-.entrees .icon__price {
+.entrees .entrees__icon_price_1 {
   width: 100%;
   height: 100%;
   color: white;
@@ -502,6 +502,20 @@ footer .footer__icon_ustensils {
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   margin-bottom: 5%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+.entrees .entrees__entrees_2:focus .entrees__anim_price_2 {
+  margin-left: 0;
+  width: 100%;
+}
+.entrees .entrees__entrees_2:focus .entrees__price_2 {
+  transform: translateX(-60px);
+}
+.entrees .entrees__entrees_2:focus .entrees__icon_price_2 {
+  transform: scale(1);
+  transform: rotate(1);
 }
 .entrees .entrees__nom_principal_2 {
   padding: 15px 0 10px 10px;
@@ -511,15 +525,40 @@ footer .footer__icon_ustensils {
 .entrees .entrees__description_2 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .entrees .entrees__price_2 {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
+  transform: translateX(1);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
+.entrees .entrees__anim_price_2 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  height: 100%;
+  width: 0;
+  margin-left: 50px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: margin 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
+.entrees .entrees__icon_price_2 {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(180deg);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .entrees .entrees__entrees_3 {
   display: grid;
@@ -528,6 +567,23 @@ footer .footer__icon_ustensils {
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   margin-bottom: 5%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+.entrees .entrees__entrees_3:focus .entrees__anim_price_3 {
+  margin-left: 0;
+  width: 100%;
+}
+.entrees .entrees__entrees_3:focus .entrees__price_3 {
+  transform: translateX(-60px);
+}
+.entrees .entrees__entrees_3:focus .entrees__icon_price_3 {
+  transform: scale(1);
+  transform: rotate(1);
+}
+.entrees .entrees__entrees_3:focus .entrees__description_3 {
+  width: 80%;
 }
 .entrees .entrees__nom_principal_3 {
   padding: 15px 0 10px 10px;
@@ -537,15 +593,40 @@ footer .footer__icon_ustensils {
 .entrees .entrees__description_3 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .entrees .entrees__price_3 {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
+  transform: translateX(1);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
+.entrees .entrees__anim_price_3 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  height: 100%;
+  width: 0;
+  margin-left: 50px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: margin 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
+}
+.entrees .entrees__icon_price_3 {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(180deg);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 
 .plats {
@@ -573,13 +654,16 @@ footer .footer__icon_ustensils {
   width: 45px;
   padding-bottom: 5px;
 }
-.plats .plats__entrees_1 {
+.plats .plats__plats_1 {
   display: grid;
   grid-template-columns: 80% 20%;
   width: 90%;
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   margin-bottom: 5%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
 }
 .plats .plats__nom_principal_1 {
   padding: 15px 0 10px 10px;
@@ -589,23 +673,30 @@ footer .footer__icon_ustensils {
 .plats .plats__description_1 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .plats .plats__price_1 {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
+  transform: translateX(1);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
-.plats .plats__entrees_2 {
+.plats .plats__plats_2 {
   display: grid;
   grid-template-columns: 80% 20%;
   width: 90%;
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   margin-bottom: 5%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
 }
 .plats .plats__nom_principal_2 {
   padding: 15px 0 10px 10px;
@@ -615,23 +706,30 @@ footer .footer__icon_ustensils {
 .plats .plats__description_2 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .plats .plats__price_2 {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
+  transform: translateX(1);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
-.plats .plats__entrees_3 {
+.plats .plats__plats_3 {
   display: grid;
   grid-template-columns: 80% 20%;
   width: 90%;
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   margin-bottom: 5%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
 }
 .plats .plats__nom_principal_3 {
   padding: 15px 0 10px 10px;
@@ -641,15 +739,19 @@ footer .footer__icon_ustensils {
 .plats .plats__description_3 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .plats .plats__price_3 {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
+  transform: translateX(1);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 
 .desserts {
@@ -677,13 +779,16 @@ footer .footer__icon_ustensils {
   width: 45px;
   padding-bottom: 5px;
 }
-.desserts .desserts__entrees_1 {
+.desserts .desserts__desserts_1 {
   display: grid;
   grid-template-columns: 80% 20%;
   width: 90%;
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   margin-bottom: 5%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
 }
 .desserts .desserts__nom_principal_1 {
   padding: 15px 0 10px 10px;
@@ -693,23 +798,30 @@ footer .footer__icon_ustensils {
 .desserts .desserts__description_1 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .desserts .desserts__price_1 {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
+  transform: translateX(1);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
-.desserts .desserts__entrees_2 {
+.desserts .desserts__desserts_2 {
   display: grid;
   grid-template-columns: 80% 20%;
   width: 90%;
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   margin-bottom: 5%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
 }
 .desserts .desserts__nom_principal_2 {
   padding: 15px 0 10px 10px;
@@ -719,23 +831,30 @@ footer .footer__icon_ustensils {
 .desserts .desserts__description_2 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .desserts .desserts__price_2 {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
+  transform: translateX(1);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
-.desserts .desserts__entrees_3 {
+.desserts .desserts__desserts_3 {
   display: grid;
   grid-template-columns: 80% 20%;
   width: 90%;
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   margin-bottom: 5%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
 }
 .desserts .desserts__nom_principal_3 {
   padding: 15px 0 10px 10px;
@@ -745,15 +864,19 @@ footer .footer__icon_ustensils {
 .desserts .desserts__description_3 {
   grid-row: 2/3;
   padding: 0 0 15px 10px;
+  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .desserts .desserts__price_3 {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
+  transform: translateX(1);
+  transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 
 .bloc_btn {

@@ -71,14 +71,14 @@
         cursor: pointer;
         outline: none;
         overflow: hidden;
-        &:focus .entrees__anim_price{
+        &:focus .entrees__anim_price_1{
             margin-left: 0;
             width: 100%;
         }
         &:focus .entrees__price_1{
             transform: translateX(-60px)
         }
-        &:focus .icon__price{
+        &:focus .entrees__icon_price_1{
             transform: scale(1);
             transform: rotate(1);
         }
@@ -100,7 +100,7 @@
         transform: translateX(1);
         transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
     }
-    & .entrees__anim_price{
+    & .entrees__anim_price_1{
         grid-column: 2 / 3;
         grid-row: 1 / 3;
         height: 100%;
@@ -110,7 +110,7 @@
         background-color: $tertiary_color;
         transition: margin 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
     }
-    & .icon__price{
+    & .entrees__icon_price_1{
         width: 100%;
         height: 100%;
         color: white;
@@ -123,6 +123,17 @@
     /*Entrée 2*/
     & .entrees__entrees_2{
         @include menu__entrees;
+        &:focus .entrees__anim_price_2{
+            margin-left: 0;
+            width: 100%;
+        }
+        &:focus .entrees__price_2{
+            transform: translateX(-60px)
+        }
+        &:focus .entrees__icon_price_2{
+            transform: scale(1);
+            transform: rotate(1);
+        }
     }
     & .entrees__nom_principal_2{
         @include menu__nom_principal;
@@ -133,9 +144,29 @@
     & .entrees__price_2{
         @include menu_price
     }
+    & .entrees__anim_price_2{
+        @include menu__anim_price
+    }
+    & .entrees__icon_price_2{
+        @include menu__icon_price
+    }
     /*Entrée 3*/
     & .entrees__entrees_3{
         @include menu__entrees;
+        &:focus .entrees__anim_price_3{
+            margin-left: 0;
+            width: 100%;
+        }
+        &:focus .entrees__price_3{
+            transform: translateX(-60px);
+        }
+        &:focus .entrees__icon_price_3{
+            transform: scale(1);
+            transform: rotate(1);
+        }
+        &:focus .entrees__description_3{
+            width: 80%;
+        }
     }
     & .entrees__nom_principal_3{
         @include menu__nom_principal;
@@ -145,6 +176,12 @@
     }
     & .entrees__price_3{
         @include menu_price
+    }
+    & .entrees__anim_price_3{
+        @include menu__anim_price
+    }
+    & .entrees__icon_price_3{
+        @include menu__icon_price
     }
 }
 .plats{
@@ -156,7 +193,7 @@
         padding-top: 15px;
     }
     /*Plat 1*/
-    & .plats__entrees_1{
+    & .plats__plats_1{
         @include menu__entrees;
     }
     & .plats__nom_principal_1{
@@ -169,7 +206,7 @@
         @include menu_price;
     }
     /*Plat 2*/
-    & .plats__entrees_2{
+    & .plats__plats_2{
         @include menu__entrees;
     }
     & .plats__nom_principal_2{
@@ -182,7 +219,7 @@
         @include menu_price;
     }
     /*Plat 3*/
-    & .plats__entrees_3{
+    & .plats__plats_3{
         @include menu__entrees;
     }
     & .plats__nom_principal_3{
@@ -204,7 +241,7 @@
         padding-top: 15px;
     }
     /*Dessert 1*/
-    & .desserts__entrees_1{
+    & .desserts__desserts_1{
         @include menu__entrees;
     }
     & .desserts__nom_principal_1{
@@ -217,7 +254,7 @@
         @include menu_price;
     }
     /*Dessert 2*/
-    & .desserts__entrees_2{
+    & .desserts__desserts_2{
         @include menu__entrees;
     }
     & .desserts__nom_principal_2{
@@ -230,7 +267,7 @@
         @include menu_price;
     }
     /*Dessert 3*/
-    & .desserts__entrees_3{
+    & .desserts__desserts_3{
         @include menu__entrees;
     }
     & .desserts__nom_principal_3{
