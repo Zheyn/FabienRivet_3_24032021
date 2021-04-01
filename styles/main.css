@@ -56,7 +56,7 @@ a {
   background-color: #ebebeb;
   width: 100%;
   height: auto;
-  padding-bottom: 25%;
+  padding-bottom: 15%;
 }
 .presentation .presentation__titre_principal {
   text-align: center;
@@ -73,12 +73,13 @@ a {
 }
 .presentation .presentation__btn {
   background: linear-gradient(#FF79DA, #9356DC);
-  width: 15rem;
-  height: 3.5rem;
+  width: 65%;
+  height: auto;
+  padding: 5%;
   border: none;
   outline: none;
-  border-radius: 2rem;
-  font-size: 4vw;
+  border-radius: 50px;
+  font-size: 1rem;
   font-weight: 600;
   color: white;
 }
@@ -96,6 +97,7 @@ a {
   font-weight: 600;
   margin-left: 8%;
   margin-bottom: 10%;
+  margin-top: 15%;
 }
 .fonctionnement .fonctionnement__btn1 {
   position: relative;

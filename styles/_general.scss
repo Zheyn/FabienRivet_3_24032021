@@ -47,7 +47,7 @@ a{
     background-color: $background_color;
     width: 100%;
     height: auto;
-    padding-bottom: 25%;
+    padding-bottom: 15%;
     .presentation__titre_principal{
         text-align: center;
         font-size: 7vw;
@@ -63,12 +63,13 @@ a{
     }
     & .presentation__btn{
        background: linear-gradient($secondary_color, $primary_color);
-       width: 15rem;
-       height: 3.5rem;
+       width: 65%;
+       height: auto;
+       padding: 5%;
        border: none;
        outline: none;
-       border-radius: 2rem;
-       font-size: 4vw;
+       border-radius: 50px;
+       font-size: 1rem;
        font-weight: 600;
        color: white;
     }
@@ -84,6 +85,7 @@ a{
         font-weight: 600;
         margin-left: 8%;
         margin-bottom: 10%;
+        margin-top: 15%;
     }
     & .fonctionnement__btn1{
       @include fonctionnement_btn;
@@ -227,3 +229,8 @@ footer{
     padding-left: 1%;
   }
 }
+
+/*background: -webkit-linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+*/
