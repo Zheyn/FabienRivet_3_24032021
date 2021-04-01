@@ -101,9 +101,11 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-left: 5%;
   margin-bottom: 5%;
   width: 65%;
+  height: auto;
   padding: 5% 12% 5% 9%;
   font-size: 4.4vw;
   font-weight: 600;
@@ -122,9 +124,11 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-left: 5%;
   margin-bottom: 5%;
   width: 65%;
+  height: auto;
   padding: 5% 12% 5% 9%;
   font-size: 4.4vw;
   font-weight: 600;
@@ -143,9 +147,11 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-left: 5%;
   margin-bottom: 5%;
   width: 65%;
+  height: auto;
   padding: 5% 12% 5% 9%;
   font-size: 4.4vw;
   font-weight: 600;
@@ -159,6 +165,20 @@ a {
   margin-right: 15%;
   color: rgba(0, 0, 0, 0.575);
   font-size: 5vw;
+}
+.fonctionnement .fonctionnement__pastille {
+  position: absolute;
+  width: 4%;
+  height: auto;
+  padding: 2%;
+  padding-bottom: 1.1%;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  left: 0;
+  transform: translateX(-45%);
 }
 
 .restaurants {

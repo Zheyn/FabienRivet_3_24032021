@@ -97,6 +97,9 @@ a{
       @include fonctionnement_btn;
       
     }
+    & .fonctionnement__pastille{
+      @include fonctionnement_btn_pastille;
+    }
 }
 .restaurants{
   @include flexcenter;

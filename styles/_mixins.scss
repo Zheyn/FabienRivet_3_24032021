@@ -17,9 +17,11 @@
 @mixin fonctionnement_btn{
       position: relative;
       @include flexcenter;
+      align-items: center;
       margin-left: 5%;
       margin-bottom: 5%;
       width: 65%;
+      height: auto;
       padding: 5% 12% 5% 9%;
       font-size: 4.4vw;
       font-weight: 600;
@@ -36,19 +38,18 @@
 }
 
 @mixin fonctionnement_btn_pastille{
-    &::before{
-        position: absolute;
-        content: "1";
-        transform: translateX(-75px);
-        width: 25px;
-        height: 20px;
-        padding-top: 5px;
-        border-radius: 50%;
-        font-size: 15px;
-        background-color: $primary_color;
-        color: white;
-        font-weight: 400;
-    }
+      position: absolute;
+      width: 4%;
+      height: auto;
+      padding: 2%;
+      padding-bottom: 1.1%;
+      border-radius: 50%;
+      background-color: $primary_color;
+      color: white;
+      font-weight: 400;
+      text-align: center;
+      left: 0;
+      transform: translateX(-45%);
 }
 @mixin restaurants_cards{
     margin-bottom: 10%;
