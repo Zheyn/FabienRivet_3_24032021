@@ -161,6 +161,40 @@
     & .entrees__icon_price_3{
         @include menu__icon_price
     }
+    & .entrees__entrees_4{
+        @include menu__entrees;
+        animation: menu_1 .8s forwards;
+        animation-delay: 350ms;
+        &:focus .entrees__anim_price_4{
+            margin-left: 0;
+            width: 100%;
+        }
+        &:focus .entrees__price_3{
+            transform: translateX(-60px);
+        }
+        &:focus .entrees__icon_price_4{
+            transform: scale(1);
+            transform: rotate(1);
+        }
+        &:focus .entrees__description_4{
+            width: 80%;
+        }
+    }
+    & .entrees__nom_principal_4{
+        @include menu__nom_principal;
+    }
+    & .entrees__description_4{
+        @include menu__description;
+    }
+    & .entrees__price_4{
+        @include menu_price
+    }
+    & .entrees__anim_price_4{
+        @include menu__anim_price
+    }
+    & .entrees__icon_price_4{
+        @include menu__icon_price
+    }
 }
 /*Plats Titre*/
 .plats{
@@ -403,4 +437,10 @@
     @include flexcenter;
     align-items: center;
     margin: 10% 0;
+}
+.header__menus--resize{
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    
 }
