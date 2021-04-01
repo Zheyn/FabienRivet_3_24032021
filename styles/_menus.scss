@@ -65,6 +65,8 @@
     /*Entrée 1*/
     & .entrees__entrees_1{
         @include menu__entrees;
+        animation: menu_1 .7s forwards;
+        animation-delay: .1s;
         &:focus .entrees__anim_price_1{
             margin-left: 0;
             width: 100%;
@@ -95,6 +97,8 @@
     /*Entrée 2*/
     & .entrees__entrees_2{
         @include menu__entrees;
+        animation: menu_1 .8s forwards;
+        animation-delay: .2s;
         &:focus .entrees__anim_price_2{
             margin-left: 0;
             width: 100%;
@@ -125,6 +129,8 @@
     /*Entrée 3*/
     & .entrees__entrees_3{
         @include menu__entrees;
+        animation: menu_1 .8s forwards;
+        animation-delay: .3s;
         &:focus .entrees__anim_price_3{
             margin-left: 0;
             width: 100%;
@@ -168,6 +174,8 @@
     /*Plat 1*/
     & .plats__plats_1{
         @include menu__entrees;
+        animation: menu_1 .8s forwards;
+        animation-delay: .4s;
         &:focus .plats__anim_price_1{
             margin-left: 0;
             width: 100%;
@@ -201,6 +209,8 @@
     /*Plat 2*/
     & .plats__plats_2{
         @include menu__entrees;
+        animation: menu_1 .8s forwards;
+        animation-delay: .5s;
         &:focus .plats__anim_price_2{
             margin-left: 0;
             width: 100%;
@@ -234,6 +244,8 @@
     /*Plat 3*/
     & .plats__plats_3{
         @include menu__entrees;
+        animation: menu_1 .8s forwards;
+        animation-delay: .6s;
         &:focus .plats__anim_price_3{
             margin-left: 0;
             width: 100%;
@@ -276,6 +288,8 @@
     }
     /*Dessert 1*/
     & .desserts__desserts_1{
+        animation: menu_1 .8s forwards;
+        animation-delay: .7s;
         @include menu__entrees;
         &:focus .desserts__anim_price_1{
             margin-left: 0;
@@ -310,6 +324,8 @@
     /*Dessert 2*/
     & .desserts__desserts_2{
         @include menu__entrees;
+        animation: menu_1 .8s forwards;
+        animation-delay: .8s;
         &:focus .desserts__anim_price_2{
             margin-left: 0;
             width: 100%;
@@ -343,6 +359,8 @@
     /*Dessert 3*/
     & .desserts__desserts_3{
         @include menu__entrees;
+        animation: menu_1 .8s forwards;
+        animation-delay: .9s;
         &:focus .desserts__anim_price_3{
             margin-left: 0;
             width: 100%;
