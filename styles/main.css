@@ -4,6 +4,7 @@
 /*Box Shadow*/
 /*Flex-centre*/
 /*@include*/
+/*Coeur*/
 .main {
   font-family: Roboto;
   width: 100vw;
@@ -251,13 +252,42 @@ a {
 .restaurants .restaurants__cards1__location {
   padding-left: 3%;
 }
-.restaurants .restaurants__cards1__heart_icon {
+.restaurants .restaurants__heart_full {
+  position: relative;
+  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-column: 2/3;
   grid-row: 1/3;
   font-size: 1.5rem;
+}
+.restaurants .menu__heart_icon {
+  display: block;
+  padding-left: 15%;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.425);
+}
+.restaurants .menu__heart_icon:hover {
+  opacity: 0;
+}
+.restaurants .menu__heart_icon:hover ~ .menu__heart_icon_full {
+  animation: heart_full 0.5s;
+  transform: scale(1);
+}
+.restaurants .menu__heart_icon_full {
+  position: absolute;
+  padding-left: 15%;
+  background: -moz-linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  top: 0;
+  transform: scale(0);
 }
 .restaurants .restaurants__cards2 {
   position: relative;
@@ -472,7 +502,6 @@ footer .footer__icon_ustensils {
 }
 .menus .menu__heart_icon {
   display: block;
-  position: relative;
   padding-left: 15%;
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.425);
@@ -497,7 +526,6 @@ footer .footer__icon_ustensils {
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
   top: 0;
-  z-index: -1;
   transform: scale(0);
 }
 

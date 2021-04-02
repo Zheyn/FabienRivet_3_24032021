@@ -138,22 +138,32 @@ a{
     }
     @include restaurants_cards;  
   }
-  & .restaurants__image1{
-    @include restaurants_image(object-position, bottom);
-  }
-  & .restaurants__cards1__caption{
-    @include restaurants_cards_caption;
-  }
-  & .restaurants__cards1__name{
-    @include restaurants_cards_name
-  }
-  & .restaurants__cards1__location{
-    @include restaurants_cards_location
-  }
-  & .restaurants__cards1__heart_icon{
-    @include flexcenter;
-    @include restaurants_cards_heart_icon
-  }
+  
+    & .restaurants__image1{
+      @include restaurants_image(object-position, bottom);
+    }
+    & .restaurants__cards1__caption{
+      @include restaurants_cards_caption;
+    }
+    & .restaurants__cards1__name{
+      @include restaurants_cards_name
+    }
+    & .restaurants__cards1__location{
+      @include restaurants_cards_location
+    }
+    & .restaurants__heart_full{
+      position: relative;
+      align-self: center;
+      @include flexcenter;
+      @include restaurants_cards_heart_icon;
+    }
+    & .menu__heart_icon{
+        @include heart_empty_index
+    }
+    & .menu__heart_icon_full{
+        @include heart_full
+    }
+
   /*Card 2*/
   .restaurants__cards2{
     position: relative;

@@ -159,3 +159,49 @@
     transform: scale(0) rotate(180deg);
     transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
+/*Coeur*/
+
+@mixin heart_empty{
+    display: block;
+    padding-left: 15%;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+    &:focus{
+        opacity: 0;
+    }
+    &:focus ~ .menu__heart_icon_full{
+        animation: heart_full 0.5s;
+        transform: scale(1);
+    }
+}
+@mixin heart_empty_index{
+    display: block;
+    padding-left: 15%;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.425);
+     
+    &:hover{
+        opacity: 0;
+    }
+    &:hover ~ .menu__heart_icon_full{
+        animation: heart_full 0.5s;
+        transform: scale(1);
+    }
+}
+
+@mixin heart_full{
+    position: absolute;
+    padding-left: 15%;
+    background:-moz-linear-gradient($secondary_color, $primary_color); 
+    background: -webkit-linear-gradient($secondary_color, $primary_color); 
+    background: linear-gradient($secondary_color, $primary_color);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-size: 1.5rem;
+    top: 0;
+    transform: scale(0);
+}
+
