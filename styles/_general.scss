@@ -120,7 +120,23 @@ a{
   }
   /*Card 1 */
   .restaurants__cards1{
-    @include restaurants_cards;
+    position: relative;
+    &::after{
+      position: absolute;
+      @include flexcenter;
+      align-items: center;
+      content: "Nouveau";
+      color: #3da78c;
+      font-size: 1.2rem;
+      font-weight: 600;
+      width: 100px;
+      height: 35px;
+      border-radius: 3px;
+      background: $tertiary_color;
+      top: 5%;
+      right: 4%;
+    }
+    @include restaurants_cards;  
   }
   & .restaurants__image1{
     @include restaurants_image(object-position, bottom);
@@ -140,6 +156,22 @@ a{
   }
   /*Card 2*/
   .restaurants__cards2{
+    position: relative;
+    &::after{
+      position: absolute;
+      @include flexcenter;
+      align-items: center;
+      content: "Nouveau";
+      color: #3da78c;
+      font-size: 1.2rem;
+      font-weight: 600;
+      width: 100px;
+      height: 35px;
+      border-radius: 3px;
+      background: $tertiary_color;
+      top: 5%;
+      right: 4%;
+    }
     @include restaurants_cards;
   }
   & .restaurants__image2{
