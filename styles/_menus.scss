@@ -32,14 +32,43 @@
         padding-top: 45px;
         border-radius: 35px 35px 0 0;
     }
+    & .heart_full{
+        position: relative;
+    }
     & .menus__titre_h1{
         font-family: $font_shrikhand;
         font-size: 1.8rem;
         margin-left: 5%;
     }
     & .menu__heart_icon{
+        display: block;
+        position: relative;
+        padding-left: 15%;
         font-size: 1.5rem;
         color: rgba(0, 0, 0, 0.425);
+        cursor: pointer;
+        &:focus{
+            opacity: 0;
+        }
+        &:focus ~ .menu__heart_icon_full{
+            animation: heart_full 0.5s;
+            transform: scale(1);
+        }
+    }
+    & .menu__heart_icon_full{
+        position: absolute;
+        padding-left: 15%;
+        background:-moz-linear-gradient($secondary_color, $primary_color); 
+        background: -webkit-linear-gradient($secondary_color, $primary_color); 
+        background: linear-gradient($secondary_color, $primary_color);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+       -webkit-text-fill-color:transparent;
+        font-size: 1.5rem;
+        top: 0;
+        z-index: -1;  
+        transform: scale(0);
     }
 }
 /*Entrée Titre*/
