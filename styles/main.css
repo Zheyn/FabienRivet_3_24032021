@@ -452,7 +452,6 @@ footer .footer__icon_ustensils {
 
 /*Loader spinner*/
 .lds-grid {
-  display: inline-block;
   position: absolute;
   position: fixed;
   width: 80px;
