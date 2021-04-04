@@ -1,6 +1,6 @@
 .main {
     font-family: Roboto;
-    width: 100vw;
+    width: 100%;
     
 }
 a{
@@ -80,10 +80,9 @@ a{
     align-items: center;
     margin-bottom: 15%;
     & .fonctionnement__titre{
-        width: 100%;
+        width: 92%;
         font-size: 6.5vw;
         font-weight: 600;
-        margin-left: 8%;
         margin-bottom: 10%;
         margin-top: 15%;
     }
@@ -112,10 +111,9 @@ a{
   padding-top: 10%;
   background-color: $background_color;
   & .restaurants__titre{
-      width: 100%;
+      width: 92%;
       font-size: 6.5vw;
       font-weight: 600;
-      margin-left: 8%;
       margin-bottom: 8%;
   }
   /*Card 1 */
@@ -276,10 +274,12 @@ footer{
 .lds-grid {
   display: inline-block;
   position: absolute;
+  position: fixed;
   width: 80px;
   height: 80px;
   top: 50%;
-  right: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
   animation: opacity_lds_loader 1.5s;
   & ~ .main{

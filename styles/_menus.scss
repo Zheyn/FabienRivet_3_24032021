@@ -53,12 +53,12 @@
     flex-direction: column;
     align-items: center;
     & .entrees__titre{
-        margin-left: 6%;
+        
         font-weight: 500;
         color: rgba(0, 0, 0, 0.637);
         margin-bottom: 5%;
         text-align: start;
-        width: 100%;
+        width: 94%;
         &::after{
             content: "";
             border-bottom: $tertiary_color 3px solid;
