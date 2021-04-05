@@ -5,6 +5,8 @@
 /*Flex-centre*/
 /*@include*/
 /*Coeur*/
+/*General*/
+/*Menus*/
 .main {
   font-family: Roboto;
   width: 100%;
@@ -133,7 +135,7 @@ a {
     width: 25%;
     height: auto;
     padding: 15px 20px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 600;
     border-radius: 1rem;
     box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
@@ -145,7 +147,7 @@ a {
   .fonctionnement .fonctionnement__btn1 i {
     margin-right: 5%;
     color: rgba(0, 0, 0, 0.575);
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
@@ -183,7 +185,7 @@ a {
     width: 25%;
     height: auto;
     padding: 15px 20px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 600;
     border-radius: 1rem;
     box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
@@ -195,7 +197,7 @@ a {
   .fonctionnement .fonctionnement__btn2 i {
     margin-right: 5%;
     color: rgba(0, 0, 0, 0.575);
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
@@ -233,7 +235,7 @@ a {
     width: 25%;
     height: auto;
     padding: 15px 20px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 600;
     border-radius: 1rem;
     box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
@@ -245,7 +247,7 @@ a {
   .fonctionnement .fonctionnement__btn3 i {
     margin-right: 5%;
     color: rgba(0, 0, 0, 0.575);
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
@@ -262,6 +264,24 @@ a {
   text-align: center;
   left: 0;
   transform: translateX(-45%);
+}
+@media screen and (min-width: 1280px) {
+  .fonctionnement .fonctionnement__pastille {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    left: 0;
+    transform: translateX(-45%);
+  }
 }
 
 .restaurants {
@@ -329,11 +349,15 @@ a {
   grid-template-rows: 50% 50%;
   width: 90vw;
   height: 8vh;
-  display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 50% 50%;
-  width: 100%;
-  height: 8vh;
+}
+@media screen and (min-width: 1280px) {
+  .restaurants .restaurants__cards1__caption {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    height: 8vh;
+  }
 }
 .restaurants .restaurants__cards1__name {
   display: flex;
@@ -360,6 +384,7 @@ a {
   padding-left: 15%;
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.425);
+  cursor: pointer;
 }
 .restaurants .menu__heart_icon:focus {
   opacity: 0;
@@ -427,11 +452,15 @@ a {
   grid-template-rows: 50% 50%;
   width: 90vw;
   height: 8vh;
-  display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 50% 50%;
-  width: 100%;
-  height: 8vh;
+}
+@media screen and (min-width: 1280px) {
+  .restaurants .restaurants__cards2__caption {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    height: 8vh;
+  }
 }
 .restaurants .restaurants__cards2__name {
   display: flex;
@@ -479,11 +508,15 @@ a {
   grid-template-rows: 50% 50%;
   width: 90vw;
   height: 8vh;
-  display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 50% 50%;
-  width: 100%;
-  height: 8vh;
+}
+@media screen and (min-width: 1280px) {
+  .restaurants .restaurants__cards3__caption {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    height: 8vh;
+  }
 }
 .restaurants .restaurants__cards3__name {
   display: flex;
@@ -531,11 +564,15 @@ a {
   grid-template-rows: 50% 50%;
   width: 90vw;
   height: 8vh;
-  display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 50% 50%;
-  width: 100%;
-  height: 8vh;
+}
+@media screen and (min-width: 1280px) {
+  .restaurants .restaurants__cards4__caption {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    height: 8vh;
+  }
 }
 .restaurants .restaurants__cards4__name {
   display: flex;
@@ -688,7 +725,7 @@ footer .footer__icon_ustensils {
   }
   .presentation .presentation__btn {
     width: 18%;
-    padding: 1.5%;
+    padding: 1.2%;
   }
 
   .fonctionnement {
@@ -808,6 +845,22 @@ footer .footer__icon_ustensils {
   animation: heart_full 0.5s;
   transform: scale(1);
 }
+@media screen and (min-width: 1280px) {
+  .menus .menu__heart_icon {
+    display: block;
+    margin-left: 50%;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+  }
+  .menus .menu__heart_icon:focus {
+    opacity: 0;
+  }
+  .menus .menu__heart_icon:focus ~ .menu__heart_icon_full {
+    animation: heart_full 0.5s;
+    transform: scale(1);
+  }
+}
 .menus .menu__heart_icon_full {
   position: absolute;
   padding-left: 15%;
@@ -821,6 +874,22 @@ footer .footer__icon_ustensils {
   font-size: 1.5rem;
   top: 0;
   transform: scale(0);
+}
+@media screen and (min-width: 1280px) {
+  .menus .menu__heart_icon_full {
+    position: absolute;
+    margin-left: 50%;
+    background: -moz-linear-gradient(#FF79DA, #9356DC);
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    top: 0;
+    transform: scale(0);
+  }
 }
 
 /*Entrée Titre*/
@@ -1623,8 +1692,22 @@ footer .footer__icon_ustensils {
   color: white;
   display: flex;
   justify-content: center;
+  cursor: pointer;
   align-items: center;
   margin: 10% 0;
+}
+@media screen and (min-width: 1280px) {
+  .commander__btn {
+    background: linear-gradient(#FF79DA, #9356DC);
+    width: 15rem;
+    height: 3.5rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+  }
 }
 
 .header__menus--resize {
@@ -1633,6 +1716,45 @@ footer .footer__icon_ustensils {
   object-fit: cover;
 }
 
+@media screen and (min-width: 1280px) {
+  .header__menus .header__menus_image_logo {
+    width: 25%;
+  }
+  .header__menus .header__menus_arrow {
+    font-size: 2rem;
+  }
+
+  .header__menus_image {
+    height: 45vh;
+    object-fit: cover;
+    object-position: 100% 65%;
+  }
+
+  .menus {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .menus .menus__titre_h1 {
+    font-size: 2.5rem;
+  }
+
+  .entrees {
+    width: 25%;
+  }
+
+  .plats {
+    width: 25%;
+  }
+
+  .desserts {
+    width: 25%;
+  }
+
+  .commander__btn {
+    margin: 5% 0;
+  }
+}
 @keyframes menu_1 {
   0% {
     transform: scale(0);

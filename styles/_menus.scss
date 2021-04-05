@@ -41,10 +41,12 @@
         margin-left: 5%;
     }
     & .menu__heart_icon{
-        @include heart_empty
+        @include heart_empty;
+        @include heart_empty_desktop;
     }
     & .menu__heart_icon_full{
-        @include heart_full
+        @include heart_full;
+        @include heart_full_desktop;
     }
 }
 /*Entrée Titre*/
@@ -439,7 +441,9 @@
 }
 .commander__btn{
     @include main_btn;
+    @include main_btn_desktop;
     @include flexcenter;
+    cursor: pointer;
     align-items: center;
     margin: 10% 0;
 }
@@ -448,4 +452,40 @@
     height: 35vh;
     object-fit: cover;
     
+}
+
+@media screen and (min-width: 1280px){
+    .header__menus{
+        & .header__menus_image_logo{
+            width: 25%;
+        }
+        & .header__menus_arrow{
+            font-size: 2rem;
+        }
+    }
+    .header__menus_image{
+        height: 45vh;
+        object-fit: cover;
+        object-position: 100% 65%;
+    }
+    .menus{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        & .menus__titre_h1{
+            font-size: 2.5rem;
+        }
+    }
+    .entrees{
+        width: 25%;
+    }
+    .plats{
+        width: 25%;
+    }
+    .desserts{
+        width: 25%;
+    }
+    .commander__btn{
+        margin: 5% 0;
+    }
 }

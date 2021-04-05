@@ -103,6 +103,7 @@ a{
     }
     & .fonctionnement__pastille{
       @include fonctionnement_btn_pastille;
+      @include fonctionnement_btn_pastille_desktop;
     }
 }
 .restaurants{
@@ -382,7 +383,7 @@ footer{
     }
     & .presentation__btn{
       width: 18%;
-      padding: 1.5%;
+      padding: 1.2%;
     }
   }
   .fonctionnement{
