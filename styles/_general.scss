@@ -142,10 +142,11 @@ a{
   
     & .restaurants__image1{
       @include restaurants_image(object-position, bottom);
-      @include restaurants_image_desktop(object-position, bottom);
+      @include restaurants_image_desktop(object-position, center);
     }
     & .restaurants__cards1__caption{
       @include restaurants_cards_caption;
+      @include restaurants_cards_caption_desktop;
     }
     & .restaurants__cards1__name{
       @include restaurants_cards_name
@@ -192,6 +193,7 @@ a{
   }
   & .restaurants__cards2__caption{
     @include restaurants_cards_caption;
+    @include restaurants_cards_caption_desktop;
   }
   & .restaurants__cards2__name{
     @include restaurants_cards_name
@@ -209,10 +211,11 @@ a{
   }
   & .restaurants__image3{
     @include restaurants_image(object-position, bottom);
-    @include restaurants_image_desktop(object-position, bottom);
+    @include restaurants_image_desktop(object-position, 100% 80%);
   }
   & .restaurants__cards3__caption{
     @include restaurants_cards_caption;
+    @include restaurants_cards_caption_desktop;
   }
   & .restaurants__cards3__name{
     @include restaurants_cards_name
@@ -230,10 +233,11 @@ a{
   }
   & .restaurants__image4{
     @include restaurants_image(object-position, bottom);
-    @include restaurants_image_desktop(object-position, bottom);
+    @include restaurants_image_desktop(object-position, 100% 80%);
   }
   & .restaurants__cards4__caption{
     @include restaurants_cards_caption;
+    @include restaurants_cards_caption_desktop;
   }
   & .restaurants__cards4__name{
     @include restaurants_cards_name
@@ -397,24 +401,46 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    & a{
-      width: 25%;
-    }
     & .restaurants__titre{
       font-size: 2.5rem;
       margin-bottom: 2%;
+      padding-left: 2%;
     }
     & .restaurants__cards1{
-      width: 50%;
+      width: 40%;
+      margin-bottom: 5%;
     }
     & .restaurants__cards2{
-      width: 50%;
+      width: 40%;
+      margin-bottom: 5%;
     }
     & .restaurants__cards3{
-      width: 50%;
+      width: 40%;
+      margin-bottom: 5%;
     }
     & .restaurants__cards4{
-      width: 50%;
+      width: 40%;
+      margin-bottom: 5%;
+    }
+  }
+  footer{
+    & .footer__titre{
+      font-size: 2rem;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    & li{
+      padding-bottom: 1%;
+    }
+    & li:nth-child(4){
+      padding-bottom: 3%;
+    }
+    & .footer__icon_ustensils{
+      padding-right: 1%;
+      padding-left: 0;
+    }
+    & .fa-hands-helping{
+      padding-right: 0.5%;
     }
   }
 }

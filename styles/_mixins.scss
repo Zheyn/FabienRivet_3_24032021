@@ -242,3 +242,11 @@
     #{$position}: $valeur;
   }
 }
+
+@mixin restaurants_cards_caption_desktop{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    height: 8vh;
+}
