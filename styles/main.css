@@ -1049,6 +1049,9 @@ footer .footer__icon_ustensils {
   transform: scale(1);
   transform: rotate(1);
 }
+.entrees .entrees__entrees_1:focus .entrees__description_1 {
+  width: 80%;
+}
 .entrees .entrees__nom_principal_1 {
   padding: 15px 0 10px 10px;
   font-size: 1.1rem;
@@ -1130,6 +1133,9 @@ footer .footer__icon_ustensils {
 .entrees .entrees__entrees_2:focus .entrees__icon_price_2 {
   transform: scale(1);
   transform: rotate(1);
+}
+.entrees .entrees__entrees_2:focus .entrees__description_2 {
+  width: 80%;
 }
 .entrees .entrees__nom_principal_2 {
   padding: 15px 0 10px 10px;
