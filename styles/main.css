@@ -85,6 +85,12 @@ a {
   font-size: 1rem;
   font-weight: 600;
   color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.presentation .presentation__btn:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in;
 }
 
 .fonctionnement {
@@ -115,6 +121,17 @@ a {
   font-weight: 600;
   border-radius: 1rem;
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.fonctionnement .fonctionnement__btn1:hover {
+  background-color: #9256dc2c;
+  transition: 0.3s ease-in;
+  transform: scale(1.02);
+}
+.fonctionnement .fonctionnement__btn1:hover > i {
+  color: #9356DC;
+  transition: 0.3s ease-in;
 }
 .fonctionnement .fonctionnement__btn1 p {
   width: 80%;
@@ -165,6 +182,17 @@ a {
   font-weight: 600;
   border-radius: 1rem;
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.fonctionnement .fonctionnement__btn2:hover {
+  background-color: #9256dc2c;
+  transition: 0.3s ease-in;
+  transform: scale(1.02);
+}
+.fonctionnement .fonctionnement__btn2:hover > i {
+  color: #9356DC;
+  transition: 0.3s ease-in;
 }
 .fonctionnement .fonctionnement__btn2 p {
   width: 80%;
@@ -215,6 +243,17 @@ a {
   font-weight: 600;
   border-radius: 1rem;
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.fonctionnement .fonctionnement__btn3:hover {
+  background-color: #9256dc2c;
+  transition: 0.3s ease-in;
+  transform: scale(1.02);
+}
+.fonctionnement .fonctionnement__btn3:hover > i {
+  color: #9356DC;
+  transition: 0.3s ease-in;
 }
 .fonctionnement .fonctionnement__btn3 p {
   width: 80%;
@@ -310,6 +349,7 @@ a {
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px 15px 15px 15px;
   background-color: white;
+  transition: 0.3s ease-in-out;
 }
 .restaurants .restaurants__cards1::after {
   position: absolute;
@@ -326,6 +366,11 @@ a {
   background: #99E2D0;
   top: 5%;
   right: 4%;
+}
+.restaurants .restaurants__cards1:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in;
+  box-shadow: 0px 6px 15px -3px rgba(0, 0, 0, 0.3);
 }
 .restaurants .restaurants__image1 {
   border-radius: 15px 15px 0 0;
@@ -413,6 +458,7 @@ a {
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px 15px 15px 15px;
   background-color: white;
+  transition: 0.3s ease-in-out;
 }
 .restaurants .restaurants__cards2::after {
   position: absolute;
@@ -429,6 +475,11 @@ a {
   background: #99E2D0;
   top: 5%;
   right: 4%;
+}
+.restaurants .restaurants__cards2:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in;
+  box-shadow: 0px 6px 15px -3px rgba(0, 0, 0, 0.3);
 }
 .restaurants .restaurants__image2 {
   border-radius: 15px 15px 0 0;
@@ -485,6 +536,12 @@ a {
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px 15px 15px 15px;
   background-color: white;
+  transition: 0.3s ease-in-out;
+}
+.restaurants .restaurants__cards3:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in;
+  box-shadow: 0px 6px 15px -3px rgba(0, 0, 0, 0.3);
 }
 .restaurants .restaurants__image3 {
   border-radius: 15px 15px 0 0;
@@ -541,6 +598,12 @@ a {
   box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
   border-radius: 15px 15px 15px 15px;
   background-color: white;
+  transition: 0.3s ease-in-out;
+}
+.restaurants .restaurants__cards4:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in;
+  box-shadow: 0px 6px 15px -3px rgba(0, 0, 0, 0.3);
 }
 .restaurants .restaurants__image4 {
   border-radius: 15px 15px 0 0;
@@ -632,12 +695,13 @@ footer .footer__icon_ustensils {
   height: 80px;
   top: 50%;
   left: 50%;
+  z-index: -1;
   transform: translate(-50%, -50%);
   opacity: 0;
-  animation: opacity_lds_loader 0.5s;
+  animation: opacity_lds_loader 1.5s;
 }
 .lds-grid ~ .main {
-  animation: opacity_main_loader 0.5s;
+  animation: opacity_main_loader 1.5s;
 }
 .lds-grid div {
   position: absolute;

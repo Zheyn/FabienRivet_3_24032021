@@ -72,6 +72,12 @@ a{
        font-size: 1rem;
        font-weight: 600;
        color: white;
+       cursor: pointer;
+       transition: 0.3s ease-in-out;
+       &:hover{
+         transform: scale(1.02);
+         transition: 0.3s ease-in;
+       }
     }
 }
 .fonctionnement{
@@ -290,11 +296,12 @@ footer{
   height: 80px;
   top: 50%;
   left: 50%;
+  z-index: -1;
   transform: translate(-50%, -50%);
   opacity: 0;
-  animation: opacity_lds_loader .5s;
+  animation: opacity_lds_loader 1.5s;
   & ~ .main{
-    animation: opacity_main_loader .5s;
+    animation: opacity_main_loader 1.5s;
   }
 
   & div {
