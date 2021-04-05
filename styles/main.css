@@ -25,7 +25,7 @@ a {
 }
 .header .header__image_logo {
   margin-bottom: 5%;
-  width: 50vw;
+  width: 50%;
 }
 .header .header__image {
   width: 100%;
@@ -122,6 +122,33 @@ a {
   color: rgba(0, 0, 0, 0.575);
   font-size: 5vw;
 }
+@media screen and (min-width: 1280px) {
+  .fonctionnement .fonctionnement__btn1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 5%;
+    width: 25%;
+    height: auto;
+    padding: 15px 20px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+  }
+  .fonctionnement .fonctionnement__btn1 p {
+    width: 80%;
+    text-align: center;
+  }
+  .fonctionnement .fonctionnement__btn1 i {
+    margin-right: 5%;
+    color: rgba(0, 0, 0, 0.575);
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 .fonctionnement .fonctionnement__btn2 {
   position: relative;
   display: flex;
@@ -145,6 +172,33 @@ a {
   color: rgba(0, 0, 0, 0.575);
   font-size: 5vw;
 }
+@media screen and (min-width: 1280px) {
+  .fonctionnement .fonctionnement__btn2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 5%;
+    width: 25%;
+    height: auto;
+    padding: 15px 20px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+  }
+  .fonctionnement .fonctionnement__btn2 p {
+    width: 80%;
+    text-align: center;
+  }
+  .fonctionnement .fonctionnement__btn2 i {
+    margin-right: 5%;
+    color: rgba(0, 0, 0, 0.575);
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 .fonctionnement .fonctionnement__btn3 {
   position: relative;
   display: flex;
@@ -167,6 +221,33 @@ a {
   margin-right: 15%;
   color: rgba(0, 0, 0, 0.575);
   font-size: 5vw;
+}
+@media screen and (min-width: 1280px) {
+  .fonctionnement .fonctionnement__btn3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 5%;
+    width: 25%;
+    height: auto;
+    padding: 15px 20px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+  }
+  .fonctionnement .fonctionnement__btn3 p {
+    width: 80%;
+    text-align: center;
+  }
+  .fonctionnement .fonctionnement__btn3 i {
+    margin-right: 5%;
+    color: rgba(0, 0, 0, 0.575);
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 .fonctionnement .fonctionnement__pastille {
   position: absolute;
@@ -233,6 +314,15 @@ a {
   object-fit: cover;
   object-position: bottom;
 }
+@media screen and (min-width: 1280px) {
+  .restaurants .restaurants__image1 {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
 .restaurants .restaurants__cards1__caption {
   display: grid;
   grid-template-columns: 80% 20%;
@@ -266,10 +356,10 @@ a {
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.425);
 }
-.restaurants .menu__heart_icon:hover {
+.restaurants .menu__heart_icon:focus {
   opacity: 0;
 }
-.restaurants .menu__heart_icon:hover ~ .menu__heart_icon_full {
+.restaurants .menu__heart_icon:focus ~ .menu__heart_icon_full {
   animation: heart_full 0.5s;
   transform: scale(1);
 }
@@ -317,6 +407,15 @@ a {
   object-fit: cover;
   object-position: 100% 60%;
 }
+@media screen and (min-width: 1280px) {
+  .restaurants .restaurants__image2 {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    object-position: 100% 60%;
+  }
+}
 .restaurants .restaurants__cards2__caption {
   display: grid;
   grid-template-columns: 80% 20%;
@@ -355,6 +454,15 @@ a {
   object-fit: cover;
   object-position: bottom;
 }
+@media screen and (min-width: 1280px) {
+  .restaurants .restaurants__image3 {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
 .restaurants .restaurants__cards3__caption {
   display: grid;
   grid-template-columns: 80% 20%;
@@ -392,6 +500,15 @@ a {
   height: 25vh;
   object-fit: cover;
   object-position: bottom;
+}
+@media screen and (min-width: 1280px) {
+  .restaurants .restaurants__image4 {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    object-position: bottom;
+  }
 }
 .restaurants .restaurants__cards4__caption {
   display: grid;
@@ -460,10 +577,10 @@ footer .footer__icon_ustensils {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  animation: opacity_lds_loader 1.5s;
+  animation: opacity_lds_loader 0.5s;
 }
 .lds-grid ~ .main {
-  animation: opacity_main_loader 1.5s;
+  animation: opacity_main_loader 0.5s;
 }
 .lds-grid div {
   position: absolute;
@@ -519,6 +636,79 @@ footer .footer__icon_ustensils {
   animation-delay: -1.6s;
 }
 
+@media screen and (min-width: 1280px) {
+  .header {
+    margin-top: 2%;
+  }
+  .header .header__image_logo {
+    width: 15%;
+    margin-bottom: 2%;
+  }
+  .header input {
+    padding: 0;
+    height: 3.5rem;
+  }
+  .header input:focus {
+    font-size: 1.3rem;
+  }
+  .header input::placeholder {
+    font-size: 1.3rem;
+  }
+
+  .presentation {
+    padding-bottom: 3%;
+  }
+  .presentation .presentation__titre_principal {
+    font-size: 2.5rem;
+    margin: 3% 8% 3% 5%;
+  }
+  .presentation .presentation__description {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+  }
+  .presentation .presentation__btn {
+    width: 18%;
+    padding: 1.5%;
+  }
+
+  .fonctionnement {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2%;
+  }
+  .fonctionnement .fonctionnement__titre {
+    font-size: 2.5rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .restaurants {
+    padding-top: 2%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .restaurants a {
+    width: 25%;
+  }
+  .restaurants .restaurants__titre {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+  }
+  .restaurants .restaurants__cards1 {
+    width: 50%;
+  }
+  .restaurants .restaurants__cards2 {
+    width: 50%;
+  }
+  .restaurants .restaurants__cards3 {
+    width: 50%;
+  }
+  .restaurants .restaurants__cards4 {
+    width: 50%;
+  }
+}
 .header__menus {
   display: grid;
   grid-template-columns: 20% 60% 20%;

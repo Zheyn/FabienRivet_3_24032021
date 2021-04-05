@@ -16,7 +16,7 @@ a{
   }
   & .header__image_logo {
     margin-bottom: 5%;
-    width: 50vw;
+    width: 50%;
   }
   & .header__image{
     width: 100%;
@@ -48,7 +48,7 @@ a{
     width: 100%;
     height: auto;
     padding-bottom: 15%;
-    .presentation__titre_principal{
+    & .presentation__titre_principal{
         text-align: center;
         font-size: 7vw;
         font-weight: 700;
@@ -88,14 +88,17 @@ a{
     }
     & .fonctionnement__btn1{
       @include fonctionnement_btn;
+      @include fonctionnement_btn_desktop
       
     }
     & .fonctionnement__btn2{
       @include fonctionnement_btn;
+      @include fonctionnement_btn_desktop
       
     }
     & .fonctionnement__btn3{
       @include fonctionnement_btn;
+      @include fonctionnement_btn_desktop
       
     }
     & .fonctionnement__pastille{
@@ -139,6 +142,7 @@ a{
   
     & .restaurants__image1{
       @include restaurants_image(object-position, bottom);
+      @include restaurants_image_desktop(object-position, bottom);
     }
     & .restaurants__cards1__caption{
       @include restaurants_cards_caption;
@@ -184,6 +188,7 @@ a{
   }
   & .restaurants__image2{
     @include restaurants_image(object-position, 100% 60%);
+    @include restaurants_image_desktop(object-position, 100% 60%);
   }
   & .restaurants__cards2__caption{
     @include restaurants_cards_caption;
@@ -204,6 +209,7 @@ a{
   }
   & .restaurants__image3{
     @include restaurants_image(object-position, bottom);
+    @include restaurants_image_desktop(object-position, bottom);
   }
   & .restaurants__cards3__caption{
     @include restaurants_cards_caption;
@@ -224,6 +230,7 @@ a{
   }
   & .restaurants__image4{
     @include restaurants_image(object-position, bottom);
+    @include restaurants_image_desktop(object-position, bottom);
   }
   & .restaurants__cards4__caption{
     @include restaurants_cards_caption;
@@ -280,9 +287,9 @@ footer{
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  animation: opacity_lds_loader 1.5s;
+  animation: opacity_lds_loader .5s;
   & ~ .main{
-    animation: opacity_main_loader 1.5s;
+    animation: opacity_main_loader .5s;
   }
 
   & div {
@@ -337,5 +344,77 @@ footer{
   top: 56px;
   left: 56px;
   animation-delay: -1.6s;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .header{
+    margin-top: 2%;
+    & .header__image_logo{
+      width: 15%;
+      margin-bottom: 2%;
+    }
+    & input{
+      padding: 0;
+      height: 3.5rem;
+    
+      &:focus{
+        font-size: 1.3rem;
+      }
+      &::placeholder{
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .presentation{
+    padding-bottom: 3%;
+    & .presentation__titre_principal{
+      font-size: 2.5rem;
+      margin: 3% 8% 3% 5%;
+    }
+    & .presentation__description{
+      font-size: 1.5rem;
+      margin-bottom: 3%;
+    }
+    & .presentation__btn{
+      width: 18%;
+      padding: 1.5%;
+    }
+  }
+  .fonctionnement{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2%;
+    & .fonctionnement__titre{
+      font-size: 2.5rem;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  }
+  .restaurants{
+    padding-top: 2%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    & a{
+      width: 25%;
+    }
+    & .restaurants__titre{
+      font-size: 2.5rem;
+      margin-bottom: 2%;
+    }
+    & .restaurants__cards1{
+      width: 50%;
+    }
+    & .restaurants__cards2{
+      width: 50%;
+    }
+    & .restaurants__cards3{
+      width: 50%;
+    }
+    & .restaurants__cards4{
+      width: 50%;
+    }
   }
 }
