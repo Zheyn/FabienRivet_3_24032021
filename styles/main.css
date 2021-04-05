@@ -149,10 +149,10 @@ a {
     align-items: center;
     margin-left: 0;
     margin-bottom: 5%;
-    width: 25%;
+    width: 18%;
     height: auto;
     padding: 15px 20px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
     border-radius: 1rem;
     box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
@@ -164,7 +164,7 @@ a {
   .fonctionnement .fonctionnement__btn1 i {
     margin-right: 5%;
     color: rgba(0, 0, 0, 0.575);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: center;
   }
 }
@@ -210,10 +210,10 @@ a {
     align-items: center;
     margin-left: 0;
     margin-bottom: 5%;
-    width: 25%;
+    width: 18%;
     height: auto;
     padding: 15px 20px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
     border-radius: 1rem;
     box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
@@ -225,7 +225,7 @@ a {
   .fonctionnement .fonctionnement__btn2 i {
     margin-right: 5%;
     color: rgba(0, 0, 0, 0.575);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: center;
   }
 }
@@ -271,10 +271,10 @@ a {
     align-items: center;
     margin-left: 0;
     margin-bottom: 5%;
-    width: 25%;
+    width: 18%;
     height: auto;
     padding: 15px 20px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
     border-radius: 1rem;
     box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
@@ -286,7 +286,7 @@ a {
   .fonctionnement .fonctionnement__btn3 i {
     margin-right: 5%;
     color: rgba(0, 0, 0, 0.575);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: center;
   }
 }
@@ -788,8 +788,8 @@ footer .footer__icon_ustensils {
     margin-bottom: 3%;
   }
   .presentation .presentation__btn {
-    width: 18%;
-    padding: 1.2%;
+    width: 250px;
+    padding: 20px;
   }
 
   .fonctionnement {
@@ -849,6 +849,36 @@ footer .footer__icon_ustensils {
   }
   footer .fa-hands-helping {
     padding-right: 0.5%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .presentation {
+    padding-bottom: 3%;
+  }
+  .presentation .presentation__titre_principal {
+    font-size: 2rem;
+    margin: 3% 8% 3% 5%;
+  }
+  .presentation .presentation__description {
+    font-size: 1.4rem;
+    margin-bottom: 3%;
+  }
+  .presentation .presentation__btn {
+    width: 250px;
+    padding: 20px;
+  }
+
+  .fonctionnement {
+    margin-bottom: 2%;
+  }
+  .fonctionnement .fonctionnement__titre {
+    font-size: 2.5rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .commander__btn_txt {
+    font-size: 1.4rem;
   }
 }
 .header__menus {
@@ -994,6 +1024,20 @@ footer .footer__icon_ustensils {
   animation: menu_1 0.7s forwards;
   animation-delay: 0.1s;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .entrees .entrees__entrees_1 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 85%;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    opacity: 0;
+  }
+}
 .entrees .entrees__entrees_1:focus .entrees__anim_price_1 {
   margin-left: 0;
   width: 100%;
@@ -1062,6 +1106,20 @@ footer .footer__icon_ustensils {
   animation: menu_1 0.8s forwards;
   animation-delay: 0.2s;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .entrees .entrees__entrees_2 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 85%;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    opacity: 0;
+  }
+}
 .entrees .entrees__entrees_2:focus .entrees__anim_price_2 {
   margin-left: 0;
   width: 100%;
@@ -1129,6 +1187,20 @@ footer .footer__icon_ustensils {
   opacity: 0;
   animation: menu_1 0.8s forwards;
   animation-delay: 0.3s;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .entrees .entrees__entrees_3 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 85%;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    opacity: 0;
+  }
 }
 .entrees .entrees__entrees_3:focus .entrees__anim_price_3 {
   margin-left: 0;
@@ -1201,11 +1273,25 @@ footer .footer__icon_ustensils {
   animation: menu_1 0.8s forwards;
   animation-delay: 350ms;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .entrees .entrees__entrees_4 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 85%;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    opacity: 0;
+  }
+}
 .entrees .entrees__entrees_4:focus .entrees__anim_price_4 {
   margin-left: 0;
   width: 100%;
 }
-.entrees .entrees__entrees_4:focus .entrees__price_3 {
+.entrees .entrees__entrees_4:focus .entrees__price_4 {
   transform: translateX(-60px);
 }
 .entrees .entrees__entrees_4:focus .entrees__icon_price_4 {
@@ -1298,6 +1384,20 @@ footer .footer__icon_ustensils {
   animation: menu_1 0.8s forwards;
   animation-delay: 0.4s;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .plats .plats__plats_1 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 85%;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    opacity: 0;
+  }
+}
 .plats .plats__plats_1:focus .plats__anim_price_1 {
   margin-left: 0;
   width: 100%;
@@ -1369,6 +1469,20 @@ footer .footer__icon_ustensils {
   animation: menu_1 0.8s forwards;
   animation-delay: 0.5s;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .plats .plats__plats_2 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 85%;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    opacity: 0;
+  }
+}
 .plats .plats__plats_2:focus .plats__anim_price_2 {
   margin-left: 0;
   width: 100%;
@@ -1439,6 +1553,20 @@ footer .footer__icon_ustensils {
   opacity: 0;
   animation: menu_1 0.8s forwards;
   animation-delay: 0.6s;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .plats .plats__plats_3 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 85%;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    opacity: 0;
+  }
 }
 .plats .plats__plats_3:focus .plats__anim_price_3 {
   margin-left: 0;
@@ -1537,6 +1665,20 @@ footer .footer__icon_ustensils {
   overflow: hidden;
   opacity: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .desserts .desserts__desserts_1 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 85%;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    opacity: 0;
+  }
+}
 .desserts .desserts__desserts_1:focus .desserts__anim_price_1 {
   margin-left: 0;
   width: 100%;
@@ -1608,6 +1750,20 @@ footer .footer__icon_ustensils {
   animation: menu_1 0.8s forwards;
   animation-delay: 0.8s;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .desserts .desserts__desserts_2 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 85%;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    opacity: 0;
+  }
+}
 .desserts .desserts__desserts_2:focus .desserts__anim_price_2 {
   margin-left: 0;
   width: 100%;
@@ -1678,6 +1834,20 @@ footer .footer__icon_ustensils {
   opacity: 0;
   animation: menu_1 0.8s forwards;
   animation-delay: 0.9s;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .desserts .desserts__desserts_3 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 85%;
+    box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    opacity: 0;
+  }
 }
 .desserts .desserts__desserts_3:focus .desserts__anim_price_3 {
   margin-left: 0;
