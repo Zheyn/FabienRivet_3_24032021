@@ -141,7 +141,7 @@ a {
   color: rgba(0, 0, 0, 0.575);
   font-size: 5vw;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .fonctionnement .fonctionnement__btn1 {
     position: relative;
     display: flex;
@@ -202,7 +202,7 @@ a {
   color: rgba(0, 0, 0, 0.575);
   font-size: 5vw;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .fonctionnement .fonctionnement__btn2 {
     position: relative;
     display: flex;
@@ -263,7 +263,7 @@ a {
   color: rgba(0, 0, 0, 0.575);
   font-size: 5vw;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .fonctionnement .fonctionnement__btn3 {
     position: relative;
     display: flex;
@@ -304,7 +304,7 @@ a {
   left: 0;
   transform: translateX(-45%);
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .fonctionnement .fonctionnement__pastille {
     position: absolute;
     width: 30px;
@@ -379,7 +379,7 @@ a {
   object-fit: cover;
   object-position: bottom;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .restaurants .restaurants__image1 {
     border-radius: 15px 15px 0 0;
     width: 100%;
@@ -395,7 +395,7 @@ a {
   width: 90vw;
   height: 8vh;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .restaurants .restaurants__cards1__caption {
     display: grid;
     grid-template-columns: 80% 20%;
@@ -488,7 +488,7 @@ a {
   object-fit: cover;
   object-position: 100% 60%;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .restaurants .restaurants__image2 {
     border-radius: 15px 15px 0 0;
     width: 100%;
@@ -504,7 +504,7 @@ a {
   width: 90vw;
   height: 8vh;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .restaurants .restaurants__cards2__caption {
     display: grid;
     grid-template-columns: 80% 20%;
@@ -550,7 +550,7 @@ a {
   object-fit: cover;
   object-position: bottom;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .restaurants .restaurants__image3 {
     border-radius: 15px 15px 0 0;
     width: 100%;
@@ -566,7 +566,7 @@ a {
   width: 90vw;
   height: 8vh;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .restaurants .restaurants__cards3__caption {
     display: grid;
     grid-template-columns: 80% 20%;
@@ -612,7 +612,7 @@ a {
   object-fit: cover;
   object-position: bottom;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .restaurants .restaurants__image4 {
     border-radius: 15px 15px 0 0;
     width: 100%;
@@ -628,7 +628,7 @@ a {
   width: 90vw;
   height: 8vh;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .restaurants .restaurants__cards4__caption {
     display: grid;
     grid-template-columns: 80% 20%;
@@ -757,7 +757,7 @@ footer .footer__icon_ustensils {
   animation-delay: -1.6s;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .header {
     margin-top: 2%;
   }
@@ -909,7 +909,7 @@ footer .footer__icon_ustensils {
   animation: heart_full 0.5s;
   transform: scale(1);
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .menus .menu__heart_icon {
     display: block;
     margin-left: 50%;
@@ -939,7 +939,7 @@ footer .footer__icon_ustensils {
   top: 0;
   transform: scale(0);
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .menus .menu__heart_icon_full {
     position: absolute;
     margin-left: 50%;
@@ -1759,8 +1759,9 @@ footer .footer__icon_ustensils {
   cursor: pointer;
   align-items: center;
   margin: 10% 0;
+  transition: 0.3s ease-in-out;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .commander__btn {
     background: linear-gradient(#FF79DA, #9356DC);
     width: 15rem;
@@ -1768,10 +1769,14 @@ footer .footer__icon_ustensils {
     border: none;
     outline: none;
     border-radius: 2rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: white;
   }
+}
+.commander__btn:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in;
 }
 
 .header__menus--resize {
@@ -1780,7 +1785,7 @@ footer .footer__icon_ustensils {
   object-fit: cover;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .header__menus .header__menus_image_logo {
     width: 25%;
   }

@@ -1,6 +1,6 @@
 /*General*/
 @mixin fonctionnement_btn_desktop{
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: 1024px){
       position: relative;
       @include flexcenter;
       align-items: center;
@@ -27,7 +27,7 @@
 }
   
   @mixin fonctionnement_btn_pastille_desktop{
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: 1024px){
       position: absolute;
       width: 30px;
       height: auto;
@@ -46,7 +46,7 @@
   }
   
   @mixin restaurants_image_desktop($position, $valeur){
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: 1024px){
       border-radius: 15px 15px 0 0;
       width: 100%;
       height: 25vh;
@@ -56,7 +56,7 @@
   }
   
   @mixin restaurants_cards_caption_desktop{
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: 1024px){
       display: grid;
       grid-template-columns: 80% 20%;
       grid-template-rows: 50% 50%;
@@ -68,7 +68,7 @@
 /*Menus*/
 
 @mixin heart_empty_desktop{
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1024px){
     display: block;
     margin-left: 50%;
     font-size: 2rem;
@@ -85,7 +85,7 @@
 }
 
 @mixin heart_full_desktop{
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1024px){
     position: absolute;
     margin-left: 50%;
     background:-moz-linear-gradient($secondary_color, $primary_color); 
@@ -102,14 +102,14 @@
 }
 
 @mixin main_btn_desktop{
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1024px){
     background: linear-gradient($secondary_color, $primary_color);
     width: 15rem;
     height: 3.5rem;
     border: none;
     outline: none;
     border-radius: 2rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: white;
   }

@@ -446,6 +446,11 @@
     cursor: pointer;
     align-items: center;
     margin: 10% 0;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.02);
+        transition: 0.3s ease-in;
+    }
 }
 .header__menus--resize{
     width: 100%;
@@ -454,7 +459,7 @@
     
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1024px){
     .header__menus{
         & .header__menus_image_logo{
             width: 25%;
