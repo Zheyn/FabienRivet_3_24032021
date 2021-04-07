@@ -152,7 +152,6 @@
     grid-row: 2 / 3;
     text-align: center;
     font-weight: 600;
-    transform: translateX(1);
     transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 @mixin menu__anim_price{
@@ -214,8 +213,7 @@
     background: linear-gradient($secondary_color, $primary_color);
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color:transparent;
+     -webkit-text-fill-color:transparent;
     font-size: 1.5rem;
     top: 0;
     transform: scale(0);

@@ -446,7 +446,6 @@ a {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
   top: 0;
@@ -963,7 +962,6 @@ footer .footer__icon_ustensils {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
   top: 0;
@@ -978,7 +976,6 @@ footer .footer__icon_ustensils {
     background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 2rem;
     top: 0;
@@ -1047,7 +1044,6 @@ footer .footer__icon_ustensils {
 }
 .entrees .entrees__entrees_1:focus .entrees__icon_price_1 {
   transform: scale(1);
-  transform: rotate(1);
 }
 .entrees .entrees__entrees_1:focus .entrees__description_1 {
   width: 80%;
@@ -1071,7 +1067,6 @@ footer .footer__icon_ustensils {
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
-  transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .entrees .entrees__anim_price_1 {
@@ -1132,7 +1127,6 @@ footer .footer__icon_ustensils {
 }
 .entrees .entrees__entrees_2:focus .entrees__icon_price_2 {
   transform: scale(1);
-  transform: rotate(1);
 }
 .entrees .entrees__entrees_2:focus .entrees__description_2 {
   width: 80%;
@@ -1156,7 +1150,6 @@ footer .footer__icon_ustensils {
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
-  transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .entrees .entrees__anim_price_2 {
@@ -1217,7 +1210,6 @@ footer .footer__icon_ustensils {
 }
 .entrees .entrees__entrees_3:focus .entrees__icon_price_3 {
   transform: scale(1);
-  transform: rotate(1);
 }
 .entrees .entrees__entrees_3:focus .entrees__description_3 {
   width: 80%;
@@ -1241,7 +1233,6 @@ footer .footer__icon_ustensils {
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
-  transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .entrees .entrees__anim_price_3 {
@@ -1302,7 +1293,6 @@ footer .footer__icon_ustensils {
 }
 .entrees .entrees__entrees_4:focus .entrees__icon_price_4 {
   transform: scale(1);
-  transform: rotate(1);
 }
 .entrees .entrees__entrees_4:focus .entrees__description_4 {
   width: 80%;
@@ -1326,7 +1316,6 @@ footer .footer__icon_ustensils {
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
-  transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .entrees .entrees__anim_price_4 {
@@ -1413,7 +1402,6 @@ footer .footer__icon_ustensils {
 }
 .plats .plats__plats_1:focus .plats__icon_price_1 {
   transform: scale(1);
-  transform: rotate(1);
 }
 .plats .plats__plats_1:focus .plats__description_1 {
   width: 80%;
@@ -1437,7 +1425,6 @@ footer .footer__icon_ustensils {
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
-  transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .plats .plats__anim_price_1 {
@@ -1498,7 +1485,6 @@ footer .footer__icon_ustensils {
 }
 .plats .plats__plats_2:focus .plats__icon_price_2 {
   transform: scale(1);
-  transform: rotate(1);
 }
 .plats .plats__plats_2:focus .plats__description_2 {
   width: 80%;
@@ -1522,7 +1508,6 @@ footer .footer__icon_ustensils {
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
-  transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .plats .plats__anim_price_2 {
@@ -1583,7 +1568,6 @@ footer .footer__icon_ustensils {
 }
 .plats .plats__plats_3:focus .plats__icon_price_3 {
   transform: scale(1);
-  transform: rotate(1);
 }
 .plats .plats__plats_3:focus .plats__description_3 {
   width: 80%;
@@ -1607,7 +1591,6 @@ footer .footer__icon_ustensils {
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
-  transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .plats .plats__anim_price_3 {
@@ -1694,7 +1677,6 @@ footer .footer__icon_ustensils {
 }
 .desserts .desserts__desserts_1:focus .desserts__icon_price_1 {
   transform: scale(1);
-  transform: rotate(1);
 }
 .desserts .desserts__desserts_1:focus .desserts__description_1 {
   width: 80%;
@@ -1718,7 +1700,6 @@ footer .footer__icon_ustensils {
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
-  transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .desserts .desserts__anim_price_1 {
@@ -1779,7 +1760,6 @@ footer .footer__icon_ustensils {
 }
 .desserts .desserts__desserts_2:focus .desserts__icon_price_2 {
   transform: scale(1);
-  transform: rotate(1);
 }
 .desserts .desserts__desserts_2:focus .desserts__description_2 {
   width: 80%;
@@ -1803,7 +1783,6 @@ footer .footer__icon_ustensils {
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
-  transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .desserts .desserts__anim_price_2 {
@@ -1864,7 +1843,6 @@ footer .footer__icon_ustensils {
 }
 .desserts .desserts__desserts_3:focus .desserts__icon_price_3 {
   transform: scale(1);
-  transform: rotate(1);
 }
 .desserts .desserts__desserts_3:focus .desserts__description_3 {
   width: 80%;
@@ -1888,7 +1866,6 @@ footer .footer__icon_ustensils {
   grid-row: 2/3;
   text-align: center;
   font-weight: 600;
-  transform: translateX(1);
   transition: transform 0.5s cubic-bezier(0.01, 0.39, 0.03, 0.94);
 }
 .desserts .desserts__anim_price_3 {

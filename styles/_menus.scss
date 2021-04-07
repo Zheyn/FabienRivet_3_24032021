@@ -83,8 +83,7 @@
             transform: translateX(-60px)
         }
         &:focus .entrees__icon_price_1{
-            transform: scale(1);
-            transform: rotate(1);
+            transform: scale(1);   
         }
         &:focus .entrees__description_1{
             width: 80%;
@@ -119,8 +118,7 @@
             transform: translateX(-60px)
         }
         &:focus .entrees__icon_price_2{
-            transform: scale(1);
-            transform: rotate(1);
+            transform: scale(1);    
         }
         &:focus .entrees__description_2{
             width: 80%;
@@ -155,8 +153,7 @@
             transform: translateX(-60px);
         }
         &:focus .entrees__icon_price_3{
-            transform: scale(1);
-            transform: rotate(1);
+            transform: scale(1); 
         }
         &:focus .entrees__description_3{
             width: 80%;
@@ -191,7 +188,6 @@
         }
         &:focus .entrees__icon_price_4{
             transform: scale(1);
-            transform: rotate(1);
         }
         &:focus .entrees__description_4{
             width: 80%;
@@ -237,7 +233,6 @@
         }
         &:focus .plats__icon_price_1{
             transform: scale(1);
-            transform: rotate(1);
         }
         &:focus .plats__description_1{
             width: 80%;
@@ -273,7 +268,6 @@
         }
         &:focus .plats__icon_price_2{
             transform: scale(1);
-            transform: rotate(1);
         }
         &:focus .plats__description_2{
             width: 80%;
@@ -309,7 +303,6 @@
         }
         &:focus .plats__icon_price_3{
             transform: scale(1);
-            transform: rotate(1);
         }
         &:focus .plats__description_3{
             width: 80%;
@@ -355,7 +348,6 @@
         }
         &:focus .desserts__icon_price_1{
             transform: scale(1);
-            transform: rotate(1);
         }
         &:focus .desserts__description_1{
             width: 80%;
@@ -391,7 +383,6 @@
         }
         &:focus .desserts__icon_price_2{
             transform: scale(1);
-            transform: rotate(1);
         }
         &:focus .desserts__description_2{
             width: 80%;
@@ -427,7 +418,6 @@
         }
         &:focus .desserts__icon_price_3{
             transform: scale(1);
-            transform: rotate(1);
         }
         &:focus .desserts__description_3{
             width: 80%;
