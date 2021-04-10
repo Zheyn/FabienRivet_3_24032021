@@ -41,7 +41,7 @@ a{
   }
 }
 input{
-  font-family: roboto;
+  font-family: roboto, FontAwesome;
 }
 .presentation{
     @include flexcenter;
