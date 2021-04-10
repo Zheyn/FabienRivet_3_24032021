@@ -40,6 +40,9 @@ a{
     }
   }
 }
+input{
+  font-family: roboto;
+}
 .presentation{
     @include flexcenter;
     flex-direction: column;
@@ -287,6 +290,7 @@ footer{
     padding-left: 1%;
   }
 }
+
 
 /*Loader spinner*/
 .lds-grid {
